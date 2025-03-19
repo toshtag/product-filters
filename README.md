@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Image
 
-## Getting Started
+<img width="1101" alt="Image" src="https://github.com/user-attachments/assets/ba12591e-b7b0-4256-8e0e-acc835ab39a9" />
 
-First, run the development server:
+## Tools & Packages Used
 
-```bash
+- Nextjs: <https://nextjs.org/>
+- Shadcn UI: <https://ui.shadcn.com/docs/installation/next>
+- Upstash: <https://upstash.com/>
+
+## Installation Steps
+
+### 1. **Install packages**
+
+Run the following command:
+
+```
+npm install
+```
+
+or
+
+```
+yarn install
+```
+
+or
+
+```
+pnpm install
+```
+
+or
+
+```
+bun install
+```
+
+### 2. **Add .env file**
+
+Create a new file named `.env` in the root of your project and add the following content:
+
+```
+UPSTASH_VECTOR_REST_URL=
+UPSTASH_VECTOR_REST_TOKEN=
+```
+
+or run the following command:
+
+```
+cp env.example .env
+```
+
+### 3. **Setup Database on Upstash**
+
+- Access to <https://upstash.com/> and sign up or login.
+- `Create Index` on Vector.
+  - Type: `Dense`
+  - Embedding Model: `Custom`
+  - Dimensions: `3`
+  - Metrics: `EUCLIDEAN`
+- Add Environment Variables to `.env` file
+- Set data from seed file.
+  - `npm run seed` or `yarn seed` or `pnpm seed` or `bun seed`
+
+### 4. **Start the development server**
+
+Start the development server by running:
+
+```
 npm run dev
-# or
+```
+
+or
+
+```
 yarn dev
-# or
+```
+
+or
+
+```
 pnpm dev
-# or
+```
+
+or
+
+```
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can access the application in your browser at <http://localhost:3000>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Reference
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<https://youtu.be/_017xTgnqGw>
